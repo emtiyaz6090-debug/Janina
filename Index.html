@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Romantic Universe</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="progressBar"></div>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Our Beautiful Journey 💖</h1>
+  <p>From October 2024 until forever — every second with you is my favorite memory.</p>
+  <button class="primary-btn" onclick="scrollToSection(1)">Explore Our Love</button>
+</section>
+
+<!-- MEMORY SLIDER -->
+<section class="section">
+  <h2>Our Memories 📸</h2>
+  <div class="slider">
+    <div class="slides" id="slides">
+      <img src="https://picsum.photos/800/500?1">
+      <img src="https://picsum.photos/800/500?2">
+      <img src="https://picsum.photos/800/500?3">
+    </div>
+  </div>
+</section>
+
+<!-- LOVE COUNTER -->
+<section class="section">
+  <h2>Time Since We Started ⏳</h2>
+  <div id="loveCounter"></div>
+</section>
+
+<!-- QUIZ -->
+<section class="section">
+  <div class="quiz-box">
+    <h2>Love Quiz 💌</h2>
+    <p>When did our love story begin?</p>
+    <div class="option" onclick="checkAnswer(false)">January 2024</div>
+    <div class="option" onclick="checkAnswer(true)">October 2024</div>
+    <div class="option" onclick="checkAnswer(false)">December 2024</div>
+    <p id="quizResult"></p>
+  </div>
+</section>
+
+<!-- MINI GAME -->
+<section class="section">
+  <h2>Catch My Heart ❤️</h2>
+  <button class="game-btn" onclick="moveButton(this)">Catch Me</button>
+</section>
+
+<!-- WISH CARD -->
+<section class="section">
+  <h2>Special Wish Card 💌</h2>
+  <div class="card" onclick="this.classList.toggle('flip')">
+    <div class="card-inner front">
+      <h3>Tap To Open</h3>
+    </div>
+    <div class="card-inner back">
+      <h3>I Promise 💍</h3>
+      <p>I will always choose you. In every lifetime.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Made With Endless Love 💕 | 2026
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
