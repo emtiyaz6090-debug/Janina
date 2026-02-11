@@ -25,9 +25,10 @@
   <h2>Our Memories 📸</h2>
   <div class="slider">
     <div class="slides" id="slides">
-      <img src="https://picsum.photos/800/500?1">
-      <img src="https://picsum.photos/800/500?2">
-      <img src="https://picsum.photos/800/500?3">
+      <img src="img1.jpg">
+      <img src="img2.jpg">
+      <img src="img3.jpg">
+  <button class="mode-toggle" onclick="toggleMode()">🌙</button>
     </div>
   </div>
 </section>
@@ -57,6 +58,30 @@
 </section>
 
 <!-- WISH CARD -->
+  <!-- LOVE LETTER BOOK -->
+<section class="section">
+  <h2>Our Love Letters 💌</h2>
+
+  <div class="book">
+    <div class="page active">
+      <h3>Page 1</h3>
+      <p>The day I met you, my world changed forever. Your smile became my favorite sunrise.</p>
+      <button onclick="nextPage()">Next ➜</button>
+    </div>
+
+    <div class="page">
+      <h3>Page 2</h3>
+      <p>Every second with you feels magical. You are my safe place, my peace, my home.</p>
+      <button onclick="nextPage()">Next ➜</button>
+    </div>
+
+    <div class="page">
+      <h3>Page 3</h3>
+      <p>No matter what happens, I promise to stand beside you. Always. Forever.</p>
+      <button onclick="nextPage()">Close 💖</button>
+    </div>
+  </div>
+</section>
 <section class="section">
   <h2>Special Wish Card 💌</h2>
   <div class="card" onclick="this.classList.toggle('flip')">
